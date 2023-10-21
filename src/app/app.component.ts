@@ -133,7 +133,6 @@ export class AppComponent {
   
   scrollTo(target: HTMLElement, burger?: any) {
     target.scrollIntoView({behavior: 'smooth'});
-    console.log(burger);
     if (burger) {
       this.form.patchValue({
         order: burger.title + ' (' + burger.price + ' ' + this.currency + ' / ' + burger.grams + 'гр)'
