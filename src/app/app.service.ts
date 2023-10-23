@@ -12,7 +12,7 @@ export class AppService {
     return this.http.post('https://testologia.site/burgers-order', data);
   }
 
-  getData( ){
-    return this.http.get('https://testologia.site/burgers-data');
+  getData(){
+    return this.http.get('https://testologia.site/burgers-data?extra=black');
   }
 }
